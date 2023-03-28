@@ -1,19 +1,15 @@
 {
-  "name": "311_wk2_day2_express-continued",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "311-checkpoint-1",
   "scripts": {
-    "start": "nodemon ./index.js"
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "2.0.22"
+  },
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.14.0",
-    "mysql": "^2.17.1",
-    "nodemon": "^1.18.11"
+    "express": "4.18.2",
+    "mysql": "2.18.1",
+    "dotenv": "16.0.3"
   }
 }
