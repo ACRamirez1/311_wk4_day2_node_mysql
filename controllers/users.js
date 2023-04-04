@@ -196,7 +196,7 @@ if(!first) {
   
   db.query(sql, params, (err, rows) => {
     if (err) {
-      console.log("getAllUsers query failed", err);
+      console.log("updateUserById query failed", err);
       res.sendStatus(400);
     } else {
       res.json(rows);

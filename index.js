@@ -4,8 +4,9 @@ const express = require("express");
 
 const path = require('path');
 
-
 const usersRouter = require('./routers/users');
+const authRoutes = require('./routers/authRoutes');
+const messageRoutes = require('./routers/message.routes')
 
 const app = express();
 
@@ -17,7 +18,10 @@ app.use(express.static('public'));
 
 app.use(express.json())
 
+
 app.use('/users', usersRouter)
+app.use('/', authRoutes);
+app.use('/', messageRoutes);
 
 app.get('/', (req, res) => {
   // res.send('Welcome to our server!')

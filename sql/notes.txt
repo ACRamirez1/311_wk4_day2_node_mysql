@@ -1,0 +1,37 @@
+any char a-z and any number 0-9
+        1-26                27-36
+
+bob123
+
+math the chars to the numbers
+
+2
+15
+2
+27
+28
+29
+
+add them up 
+19+ 27+ 28+ 29 = 103
+
+random num and divide by 6 + 17.1666666 // store this value 
+// this is the hashed password
+
+goal is to make my hashed function a one-way function
+easy to make a hash, but very hard to go the other way
+
+chances of collision(can it be unhashed or figured out) to be as close to zero as possible
+
+
+
+echo "bob123" | SHA256sum  // example of how I enter this in to see password 
+
+salt is an extra random string that goes before the password
+token is a secret that goes after the password hash
+
+salt.pwdhash.token
+
+alsdfjaldsjf.5495f0c302b232ac6012e28f31e07984fbd411c641298bc718a9ac57403c1fb3.jaldfjaweoc
+
+chances of collision to be as close to zero as possible is the goal 
